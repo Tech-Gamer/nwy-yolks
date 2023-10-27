@@ -1,4 +1,4 @@
-name: build go
+name: build elixir
 on:
   workflow_dispatch:
   schedule:
@@ -7,25 +7,23 @@ on:
     branches:
       - master
     paths:
-      - go/**
+      - elixir/**
 jobs:
   push:
-    name: "yolks:go_${{ matrix.tag }}"
+    name: "yolks:elixir_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         tag:
-          - '1.14'
           - '1.15'
-          - '1.16'
-          - '1.17'
-          - '1.18'
-          - '1.19'
-          - '1.20'
-          - '1.21'
+          - '1.14'
+          - '1.13'
+          - '1.12'
+          - latest
     steps:
       - uses: actions/checkout@v3
+      - uses: docker/setup-qemu-action@v2
       - uses: docker/setup-buildx-action@v2
         with:
           buildkitd-flags: --debug
@@ -36,9 +34,9 @@ jobs:
           password: ${{ secrets.REGISTRY_TOKEN }}
       - uses: docker/build-push-action@v4
         with:
-          context: ./go
-          file: ./go/${{ matrix.tag }}/Dockerfile
-          platforms: linux/amd64
+          context: ./elixir
+          file: ./elixir/${{ matrix.tag }}/Dockerfile
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/parkervcp/yolks:go_${{ matrix.tag }}
+            ghcr.io/parkervcp/yolks:elixir_${{ matrix.tag }}
