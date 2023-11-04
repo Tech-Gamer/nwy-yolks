@@ -122,6 +122,8 @@ is tagged correctly.
   * `ghcr.io/parkervcp/games:minetest`  
 * [`mohaa`](games/mohaa)
   * `ghcr.io/pterodactyl/games:mohaa`  
+* [`Multi Theft Auto: San Andreas`](games/mta)
+  * `ghcr.io/pterodactyl/games:mta`    
 * [`samp`](/games/samp)
   * `ghcr.io/parkervcp/games:samp`  
 * [`source`](/games/source)
