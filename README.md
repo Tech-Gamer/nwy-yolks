@@ -290,4 +290,4 @@ is tagged correctly.
 * [`ubuntu-install`](/installers/ubuntu)
   * `ghcr.io/parkervcp/installers:ubuntu`
 
-This project is sponsored by Browserstack.
+This project is tested with BrowserStack
