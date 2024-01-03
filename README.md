@@ -87,6 +87,8 @@ is tagged correctly.
   * `ghcr.io/parkervcp/yolks:dotnet_6`
 * [`dotnet7.0`](/dotnet/7)
   * `ghcr.io/parkervcp/yolks:dotnet_7`
+* [`dotnet8.0`](/dotnet/8)
+  * `ghcr.io/parkervcp/yolks:dotnet_8`
 
 ### [Elixir](/elixir)
 
@@ -162,6 +164,8 @@ is tagged correctly.
   * `ghcr.io/parkervcp/yolks:java_17`
 * [`java19`](/java/19)
   * `ghcr.io/parkervcp/yolks:java_19`
+* [`java21`](/java/21)
+  * `ghcr.io/parkervcp/yolks:java_21`
 
 ### [MariaDB](/mariadb)
 
@@ -175,6 +179,8 @@ is tagged correctly.
     * `ghcr.io/parkervcp/yolks:mariadb_10.6`
   * [`MariaDB 10.7`](/mariadb/10.7)
     * `ghcr.io/parkervcp/yolks:mariadb_10.7`
+  * [`MariaDB 11.2`](/mariadb/11.2)
+    * `ghcr.io/parkervcp/yolks:mariadb_11.2`
 
 ### [MongoDB](/mongodb)
 
@@ -206,7 +212,8 @@ is tagged correctly.
   * `ghcr.io/parkervcp/yolks:nodejs_19`
 * [`node20`](/nodejs/20)
   * `ghcr.io/parkervcp/yolks:nodejs_20`
-
+* [`node21`](/nodejs/21)
+  * `ghcr.io/parkervcp/yolks:nodejs_21`
 
 ### [PostgreSQL](/postgres)
 
@@ -249,8 +256,6 @@ is tagged correctly.
 
 ### [Rust](/rust)
 
-* ['rust1.31'](/rust/1.31)
-  * `ghcr.io/parkervcp/yolks:rust_1.31`
 * ['rust1.56'](/rust/1.56)
   * `ghcr.io/parkervcp/yolks:rust_1.56`
 * ['rust1.60'](/rust/1.60)
