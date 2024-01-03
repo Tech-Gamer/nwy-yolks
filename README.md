@@ -289,3 +289,5 @@ is tagged correctly.
   * `ghcr.io/parkervcp/installers:debian`
 * [`ubuntu-install`](/installers/ubuntu)
   * `ghcr.io/parkervcp/installers:ubuntu`
+
+This project is sponsored by Browserstack.
